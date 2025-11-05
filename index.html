@@ -1,14 +1,137 @@
+<!doctype html>
+<html lang="id">
 <head>
-    <title>My First Git Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Aqsha Fadilah</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My First Git Project</title>
-</head>
+
 <body>
-    <h1>Hello Git!</h1>
-    <p>This is my first project with version control.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Aqsha Fadilah</h1>
+        <p class="tag">Mahasiswa Teknik Informatika</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2>Halo, saya Aqsha 👋</h2>
+          <p class="lead">Saya mahasiswa Teknik Informatika yang menyukai pengembangan web, pemrosesan citra, dan sistem embedded. Website ini dibuat untuk menerapkan materi HTML dan CSS pada modul praktikum.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">Lihat Proyek</a>
+            <a class="btn outline" href="#contact">Hubungi</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="profile-card">
+            <img src="akso.jpg" alt="Foto Aqsha Fadilah" class="avatar">
+            <h3>Muhammad Aqsha Fadilah Jailani</h3>
+            <p>Teknik Informatika 2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>Tentang Saya</h3>
+      <p>Saya suka membuat solusi yang sederhana dan efisien. Pengalaman utama saya adalah desain antarmuka dan pengembangan web menggunakan HTML, CSS, dan JavaScript. Saya juga tertarik dengan pemrograman mikrokontroler seperti ESP32/Arduino dan bahasa pemrograman C.</p>
+      
+      <h4>Daftar Minat Saya:</h4>
+      <ul>
+        <li>Frontend Development (HTML, CSS, JavaScript)</li>
+        <li>Embedded System (ESP32, Arduino)</li>
+        <li>Machine Learning Dasar</li>
+      </ul>
+
+      <div class="skills">
+        <span><i class="devicon-html5-plain colored"></i> HTML</span>
+        <span><i class="devicon-css3-plain colored"></i> CSS</span>
+        <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+        <span><i class="devicon-python-plain colored"></i> Python</span>
+        <span><i class="devicon-c-plain colored"></i> C</span>
+        <span><i class="fa-solid fa-microchip"></i> ESP32 / Arduino</span>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h3>Proyek Saya</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media">📷</div>
+          <div class="card-body">
+            <h4>Segmentasi Citra</h4>
+            <p>Implementasi filter mean dan median pada citra digital menggunakan Python dan OpenCV.</p>
+            <p class="meta">Tech: Python, OpenCV</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">🔌</div>
+          <div class="card-body">
+            <h4>Smart Home Mini</h4>
+            <p>Kontrol perangkat rumah sederhana dengan ESP32, sensor suhu DHT11, dan dashboard Blynk.</p>
+            <p class="meta">Tech: ESP32, Arduino, Blynk</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">🌐</div>
+          <div class="card-body">
+            <h4>Website Desa</h4>
+            <p>Website informasi desa dengan desain responsif dan sistem login sederhana menggunakan PHP dan Tailwind CSS.</p>
+            <p class="meta">Tech: HTML, Tailwind CSS, PHP</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Kontak</h3>
+      <p>Ingin bekerja sama atau bertanya sesuatu? Isi pesan singkat di bawah atau hubungi via email langsung.</p>
+      <p>Email: <a href="mailto:aqshafadilah@gmail.com">aqshafadilah@gmail.com</a></p>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Terima kasih — formulir ini hanya simulasi.');">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" placeholder="Nama" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+        <button class="btn primary" type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Aqsha Fadilah Jailani. All rights reserved. |
+        <a href="mailto:aqshafadilah@gmail.com">aqshafadilah@gmail.com</a>
+      </p>
+      <div class="socials">
+        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
